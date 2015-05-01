@@ -45,7 +45,8 @@ public class ArrayAsociativoTest {
 		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
 		a.put(3, 4);
 		a.remove(3);
-		boolean res = a.isempty()&&a.get(3)==null;
+		boolean res = a.isempty();
+		;
 		assertTrue(res);			
 	}
 	@Test (expected = ArrayException.class)
@@ -60,6 +61,17 @@ public class ArrayAsociativoTest {
 		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
 		a.put(3, 4);
 		a.put(3, 5);
+					
+	}
+	
+	@Test 
+	public void test9() {
+		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
+		a.put(3, 4);
+		a.remove(3);
+		a.put(3, 5);
+		int res = a.get(3);
+		assertEquals(5, res);
 					
 	}
 }
