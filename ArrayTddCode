@@ -21,9 +21,11 @@ public class ArrayAsociativo <T,Z>{
 		
 	}
 
-	public void put(T i, Z j) {
+public void put(T i, Z j) {
 		// TODO Auto-generated method stub
 		if(currentsize+1 >size){
+			throw new ArrayException();
+		}else if(arrayKeys.contains(i)){
 			throw new ArrayException();
 		}else{
 			arrayKeys.add(currentsize,i);
