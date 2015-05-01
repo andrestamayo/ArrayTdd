@@ -11,4 +11,12 @@ public class ArrayAsociativoTest {
 		ArrayAsociativo a = new ArrayAsociativo(10);
 	}
 
+	@Test
+	public void test2() {
+		ArrayAsociativo a = new ArrayAsociativo<Integer,Integer>(10);
+		a.put(3,4);
+	}
+	
+	
+	
 }
