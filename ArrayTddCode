@@ -1,14 +1,13 @@
 package prArrayAsociativo;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
-public class ArrayAsociativoTest {
-
-	@Test
-	public void test() {
-		ArrayAsociativo a = new ArrayAsociativo(10);
+public class ArrayAsociativo {
+	
+	
+	public ArrayAsociativo (int a) {
+		
+		
+		
 	}
 
 }
+
