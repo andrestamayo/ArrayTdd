@@ -3,7 +3,7 @@ package prArrayAsociativo;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
+//import javax.swing.text.html.HTMLDocument.Iterator;
 
 
 public class ArrayAsociativo <T,Z>{
@@ -23,9 +23,15 @@ public class ArrayAsociativo <T,Z>{
 
 	public void put(T i, Z j) {
 		// TODO Auto-generated method stub
-		arrayKeys.add(currentsize,i);
-		arrayObjets.add(currentsize,j);
-		currentsize++;
+		if(currentsize+1 >size){
+			throw new ArrayException();
+		}else{
+			arrayKeys.add(currentsize,i);
+			arrayObjets.add(currentsize,j);
+			
+			currentsize++;
+		}
+		
 	}
 
 	public Z get(T i) {
