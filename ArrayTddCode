@@ -67,6 +67,9 @@ public class ArrayAsociativo <T,Z>{
 			}
 			
 		}
+		if(index>=arrayKeys.size()){
+			throw new ArrayException();
+		}
 	}
 
 }
