@@ -55,4 +55,11 @@ public class ArrayAsociativoTest {
 		a.remove(3);
 					
 	}
+	@Test (expected = ArrayException.class)
+	public void test8() {
+		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
+		a.put(3, 4);
+		a.put(3, 5);
+					
+	}
 }
