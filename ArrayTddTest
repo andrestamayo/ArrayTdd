@@ -40,4 +40,13 @@ public class ArrayAsociativoTest {
 		boolean res = a.isempty();
 		assertTrue(res);			
 	}
+	@Test 
+	public void test6() {
+		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
+		a.put(3, 4);
+		a.remove(3);
+		boolean res = a.isempty()&&a.get(3)==null;
+		assertTrue(res);			
+	}
 }
+
