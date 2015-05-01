@@ -1,6 +1,6 @@
 package prArrayAsociativo;
 
-public class ArrayAsociativo {
+public class ArrayAsociativo <T,Z>{
 	
 	
 	public ArrayAsociativo (int a) {
@@ -9,5 +9,9 @@ public class ArrayAsociativo {
 		
 	}
 
-}
+	public void put(int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
 
+}
