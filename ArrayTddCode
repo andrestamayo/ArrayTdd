@@ -1,15 +1,44 @@
 package prArrayAsociativo;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+
 public class ArrayAsociativo <T,Z>{
-	
+	private List<T> arrayKeys;
+	private List<Z> arrayObjets;
+	private int size;
+	private int currentsize;
 	
 	public ArrayAsociativo (int a) {
-		
+		arrayKeys= new ArrayList<T>();
+		arrayObjets= new ArrayList<Z>();
+		size=a;
+		currentsize=0;
 		
 		
 	}
 
-	public void put(int i, int j) {
+	public void put(T i, Z j) {
+		// TODO Auto-generated method stub
+		arrayKeys.add(currentsize,i);
+		arrayObjets.add(currentsize,j);
+		currentsize++;
+	}
+
+	public Z get(T i) {
+		int index =0;
+		Z res=null;
+		for(T t :arrayKeys){
+			if(t.equals(i)){
+				res=arrayObjets.get(index);
+			}
+			index++;
+		}
+		
+		return res;	
 		// TODO Auto-generated method stub
 		
 	}
