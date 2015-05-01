@@ -1,4 +1,4 @@
-package prArrayAsociativo;
+ppackage prArrayAsociativo;
 
 import static org.junit.Assert.*;
 
@@ -18,5 +18,11 @@ public class ArrayAsociativoTest {
 	}
 	
 	
-	
+	@Test
+	public void test3() {
+		ArrayAsociativo a = new ArrayAsociativo<Integer,Integer>(10);
+		a.put(3,4);
+		int res = a.get(3);
+		assertEquals(4, a);
+	}
 }
