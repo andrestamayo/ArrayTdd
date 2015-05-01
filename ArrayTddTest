@@ -48,5 +48,11 @@ public class ArrayAsociativoTest {
 		boolean res = a.isempty()&&a.get(3)==null;
 		assertTrue(res);			
 	}
+	@Test (expected = ArrayException.class)
+	public void test7() {
+		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
+		
+		a.remove(3);
+					
+	}
 }
-
