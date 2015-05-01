@@ -21,7 +21,7 @@ public class ArrayAsociativo <T,Z>{
 		
 	}
 
-public void put(T i, Z j) {
+	public void put(T i, Z j) {
 		// TODO Auto-generated method stub
 		if(currentsize+1 >size){
 			throw new ArrayException();
@@ -59,19 +59,14 @@ public void put(T i, Z j) {
 	public void remove(T i) {
 		// TODO Auto-generated method stub
 		int index=0;
-		for(T t: arrayKeys){
-			if(t.equals(i)){
-				
-				arrayObjets.add(index,null);
-				currentsize--;
-			}else{
-				index++;
-			}
-			
-		}
-		if(index>=arrayKeys.size()){
+		
+		boolean found1=arrayObjets.remove(get(i));
+		boolean found2 =arrayKeys.remove(i);
+		if(!(found1||found2)){
 			throw new ArrayException();
 		}
+		currentsize--;
+		
 	}
 
 }
