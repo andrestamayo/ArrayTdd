@@ -8,7 +8,7 @@ public class ArrayAsociativoTest {
 
 	@Test
 	public void test() {
-		ArrayAsociativo a = new ArrayAsociativo();
+		ArrayAsociativo a = new ArrayAsociativo(10);
 	}
 
 }
