@@ -34,4 +34,10 @@ public class ArrayAsociativoTest {
 		
 			
 	}
+	@Test 
+	public void test5() {
+		ArrayAsociativo<Integer, Integer> a = new ArrayAsociativo<Integer,Integer>(10);
+		boolean res = a.isempty();
+		assertTrue(res);			
+	}
 }
