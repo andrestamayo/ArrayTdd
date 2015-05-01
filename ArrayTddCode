@@ -49,4 +49,9 @@ public class ArrayAsociativo <T,Z>{
 		
 	}
 
+	public boolean isempty() {
+		// TODO Auto-generated method stub
+		return currentsize==0;
+	}
+
 }
